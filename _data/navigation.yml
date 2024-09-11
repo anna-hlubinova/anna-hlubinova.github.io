@@ -14,7 +14,7 @@ main:
       - title: "DÚ 2"
         url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Cvičenia mPMS"
-        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+      url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
   # - title: "Sample Collections"
   #   url: /collection-archive/
