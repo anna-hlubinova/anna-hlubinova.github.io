@@ -22,20 +22,31 @@ body {
 
 
 /* Skrytie podradených položiek (detí) */
+/* Globálne úpravy menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block; /* Aby položky menu boli v rade */
+}
+
 nav ul ul {
   display: none;
   position: absolute;
-  background-color: white; /* Farba pozadia pre rozbaľovacie menu */
+  background-color: white; /* Pozadie podradeného menu */
   padding: 0;
   list-style-type: none;
+  z-index: 1000;
 }
 
-/* Zobrazenie podradených položiek pri hover nad hlavnou položkou */
 nav ul li:hover > ul {
   display: block;
 }
 
-/* Styling pre položky dropdownu */
 nav ul ul li {
   float: none;
   padding: 0;
@@ -45,9 +56,9 @@ nav ul ul li a {
   padding: 10px 15px;
   display: block;
   white-space: nowrap;
+  background-color: white;
 }
 
-/* Zabezpečí, že položky dropdownu sa zobrazia pod sebou */
 nav ul ul li a:hover {
-  background-color: #f0f0f0; /* Nastav farbu pozadia pri hover */
+  background-color: #f0f0f0;
 }
