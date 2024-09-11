@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "Cvičenia mEMM"
+  - title: "Cvičenia mEMM" 
     children:
       - title: "Cvičenie 1"
         url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
