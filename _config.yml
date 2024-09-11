@@ -116,12 +116,12 @@ author:
   name             : "Anna Hlubinová"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : # "I am an **amazing** person."
-  location         : <p style="font-size: 4px;">Katedra aplikovanej matematiky a štatistiky, FMFI UK</p>
+  location         : "KAMŠ FMFI UK"
   email            : "Anna.Hlubinova@fmph.uniba.sk"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:Anna.Hlubinova@fmph.uniba.sk"
+      url: #"mailto:Anna.Hlubinova@fmph.uniba.sk"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
