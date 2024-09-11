@@ -1,7 +1,19 @@
 # main links
 main:
   - title: "Cvičenia mEMM"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    children:
+      - title: "Cvičenie 1"
+        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+      - title: "Cvičenie 2"
+        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+      - title: "Cvičenie 3"
+        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+      - title: "Cvičenie 4"
+        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+     - title: "Cvičenie 5"
+        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+      - title: "Cvičenie 6"
+        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Domáce úlohy mEMM"
     url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Cvičenia mPMS"
