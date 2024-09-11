@@ -4,21 +4,21 @@ main:
   - title: "Cvičenia mEMM" 
     children:
       - title: "Cvičenie 1"
+        url: https://anna-hlubinova.github.io/docs//
+      - title: "Cvičenie 2"
+        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Domáce úlohy mEMM"
+    children:
+      - title: "DÚ 1"
+        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+      - title: "DÚ 2"
+        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Cvičenia mPMS"
+    children:
+      - title: "Cvičenie 1"
         url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
       - title: "Cvičenie 2"
         url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-      - title: "Cvičenie 3"
-        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-      - title: "Cvičenie 4"
-        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-      - title: "Cvičenie 5"
-        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-      - title: "Cvičenie 6"
-        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Domáce úlohy mEMM"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Cvičenia mPMS"
-    url: /year-archive/ 
 
   # - title: "Sample Collections"
   #   url: /collection-archive/
