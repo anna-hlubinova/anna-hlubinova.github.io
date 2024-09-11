@@ -2,19 +2,11 @@
 # main links
 main:
   - title: "Cvičenia mEMM" 
-    children:
-      - title: "Cvičenie 1"
-        url: https://anna-hlubinova.github.io/DU5_CR.html/
-      - title: "Cvičenie 2"
-        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Domáce úlohy mEMM"
-    children:
-      - title: "DÚ 1"
-        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-      - title: "DÚ 2"
-        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Cvičenia mPMS"
-    url: https://anna-hlubinova.github.io/docs/DU5_CR.html
+    url: https://anna-hlubinova.github.io/DU5_CR.html
 
 
   # - title: "Sample Collections"
