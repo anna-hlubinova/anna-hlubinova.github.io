@@ -7,3 +7,47 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+nav[role="navigation"] {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; // Zabezpečí, že menu bude nad ostatným obsahom
+  background-color: white; // Nastav farbu pozadia podľa potreby
+}
+
+body {
+  padding-top: 60px; // Uprav toto podľa výšky tvojho menu
+}
+
+
+/* Skrytie podradených položiek (detí) */
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: white; /* Farba pozadia pre rozbaľovacie menu */
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Zobrazenie podradených položiek pri hover nad hlavnou položkou */
+nav ul li:hover > ul {
+  display: block;
+}
+
+/* Styling pre položky dropdownu */
+nav ul ul li {
+  float: none;
+  padding: 0;
+}
+
+nav ul ul li a {
+  padding: 10px 15px;
+  display: block;
+  white-space: nowrap;
+}
+
+/* Zabezpečí, že položky dropdownu sa zobrazia pod sebou */
+nav ul ul li a:hover {
+  background-color: #f0f0f0; /* Nastav farbu pozadia pri hover */
+}
