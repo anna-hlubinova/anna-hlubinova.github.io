@@ -14,10 +14,6 @@ main:
       - title: "DÚ 2"
         url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Cvičenia mPMS"
-    children:
-      - title: "Cvičenie 1"
-        url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-      - title: "Cvičenie 2"
         url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
   # - title: "Sample Collections"
