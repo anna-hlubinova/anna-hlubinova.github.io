@@ -15,3 +15,24 @@ nav[role="navigation"] {
   z-index: 1000; // Zabezpečí, že menu bude nad ostatným obsahom
   background-color: white; // Nastav farbu pozadia podľa potreby
 }
+
+/* Resetovanie veľkosti písma */
+body, 
+.nav-main, 
+.sidebar, 
+.sidebar__nav, 
+.sidebar__nav li, 
+.sidebar__nav a {
+  font-size: inherit;  /* Obnoví predvolenú veľkosť písma dedičnú z tela */
+  line-height: normal; /* Obnoví predvolenú výšku riadkov */
+}
+
+/* Resetovanie paddingu a marginu pre navigačné prvky */
+.nav-main ul, 
+.nav-main li, 
+.sidebar__nav ul, 
+.sidebar__nav li {
+  padding: 0;
+  margin: 0;
+}
+
