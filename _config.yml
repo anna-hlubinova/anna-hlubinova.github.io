@@ -115,8 +115,14 @@ analytics:
 author:
   name             : "Anna Hlubinová"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : # "I am an **amazing** person."
-  location         : "KAMŠ FMFI UK"
+  bio              : "PhD. študent"
+  location:
+  - name: "Katedra aplikovanej matematiky"
+  - name: "a štatistiky"
+  - name: "FMFI UK"
+    url: "https://example.com/ine-miesto"
+  - name: "Kancelária: M 232"
+
   email            : "Anna.Hlubinova@fmph.uniba.sk"
   links:
     - label: "Email"
