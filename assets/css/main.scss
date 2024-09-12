@@ -29,17 +29,20 @@ search: false
 }
 
 /* Ak chceš fixovať header, môžeš pridať fixné pozicionovanie */
-.site-header {
+.masthead {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 1000;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Voliteľné */
+  z-index: 9999; /* Zabezpečí, že bude na vrchu ostatného obsahu */
+  background-color: white; /* Nastavte farbu pozadia podľa vášho dizajnu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Jemný tieň, aby sa oddelila od obsahu */
+  padding: 10px 0; /* Trochu extra priestoru, ak je potrebné */
 }
 
-body {
-  padding-top: 60px; /* Prispôsobte podľa výšky menu */
+/* Zabezpečenie dostatočného miesta pre obsah pod navigáciou */
+.initial-content {
+  padding-top: 80px; /* Nastavte podľa výšky masthead */
 }
 
 
