@@ -344,3 +344,28 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+sidebars:
+  cvičenia_memm:
+    - title: Cvičenia mEMM
+      children:
+        - title: "Cvičenie 1"
+          url: /docs/quick-start-guide/
+        - title: "Cvičenie 2"
+          url: /docs/structure/
+
+  domace_ulohy_memm:
+    - title: Domáce úlohy mEMM
+      children:
+        - title: "DÚ 1"
+          url: /docs/configuration/
+        - title: "DÚ 2"
+          url: /docs/navigation/
+
+  cvicenia_mpms:
+    - title: Cvičenia mPMS
+      children:
+        - title: "Cvičenie 1"
+          url: /docs/quick-start-guide/
+        - title: "Cvičenie 2"
+          url: /docs/structure/
