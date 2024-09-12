@@ -351,21 +351,19 @@ sidebars:
       children:
         - title: "Cvičenie 1"
           url: /DU5_CR/
-        - title: "Cvičenie 2"
-          url: /docs/structure/
 
   domace_ulohy_memm:
     - title: Domáce úlohy mEMM
       children:
         - title: "DÚ 1"
-          url: /docs/configuration/
+          url: /mEMM_DU1/
         - title: "DÚ 2"
-          url: /docs/navigation/
+          url: /mEMM_DU2/
 
   cvicenia_mpms:
     - title: Cvičenia mPMS
       children:
         - title: "Cvičenie 1"
-          url: /docs/quick-start-guide/
+          url: /mPMS_Cv1/
         - title: "Cvičenie 2"
-          url: /docs/structure/
+          url: /mPMS_Cv2/
