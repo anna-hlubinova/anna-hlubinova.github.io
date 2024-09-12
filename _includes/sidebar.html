@@ -1,18 +1,18 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
-<div class="sidebar sticky" style="font-size: 18px;">
+<div class="sidebar sticky">
   {% if page.author_profile or layout.author_profile %}
     {% include author-profile.html %}
   {% endif %}
   {% if page.sidebar %}
     {% assign sidebar_data = site.sidebars[page.sidebar] %}
     {% if sidebar_data %}
-      <ul style="font-size: 16px;">
+      <ul class="main-list">
         {% for item in sidebar_data %}
           <li>
-            <h3 style="font-size: 20px;">{{ item.title }}</h3>
-            <ul style="font-size: 18px;"> <!-- Zvýšená veľkosť textu pre vnorené položky -->
+            <h3 class="item-title">{{ item.title }}</h3>
+            <ul class="child-list">
               {% for child in item.children %}
-                <li style="font-size: 18px;"><a href="{{ child.url }}">{{ child.title }}</a></li>
+                <li class="child-item"><a href="{{ child.url }}">{{ child.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
@@ -22,3 +22,4 @@
   {% endif %}
 </div>
 {% endif %}
+
