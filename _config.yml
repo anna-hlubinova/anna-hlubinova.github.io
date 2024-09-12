@@ -350,7 +350,7 @@ sidebars:
     - title: Cvičenia mEMM
       children:
         - title: "Cvičenie 1"
-          url: /docs/quick-start-guide/
+          url: /DU5_CR/
         - title: "Cvičenie 2"
           url: /docs/structure/
 
