@@ -49,7 +49,7 @@ search: false
 /* Sidebar nalavo */
 .sidebar {
   position: fixed; /* Fixné umiestnenie */
-  top: 300; /* Umiestnenie od vrchu stránky */
+  top: 150; /* Umiestnenie od vrchu stránky */
   left: 20; /* Umiestnenie od ľavej strany stránky */
   width: 250px; /* Šírka sidebaru, môžeš upraviť podľa potreby */
   height: 50vh; /* Výška sidebaru na celú výšku obrazovky */
@@ -66,7 +66,7 @@ search: false
 }
 
 body .sidebar {
-  top: 300px;
+  top: 150px;
 }
 
 
