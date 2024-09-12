@@ -28,6 +28,14 @@ search: false
   font-size: 18px; /* Veľkosť textu pre vnorené položky */
 }
 
+/* Ak chceš fixovať header, môžeš pridať fixné pozicionovanie */
+.masthead {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Aby sa header zobrazoval nad ostatnými elementmi */
+}
+
 
 
 
