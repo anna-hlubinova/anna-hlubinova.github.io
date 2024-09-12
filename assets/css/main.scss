@@ -15,37 +15,3 @@ nav[role="navigation"] {
   z-index: 1000; // Zabezpečí, že menu bude nad ostatným obsahom
   background-color: white; // Nastav farbu pozadia podľa potreby
 }
-
-/* Zabezpečenie konzistentnej veľkosti písma pre hlavné menu */
-.nav-main,
-.nav-main ul,
-.nav-main li {
-  font-size: 18px; /* Zvýšte veľkosť podľa potreby */
-  line-height: 1.6;
-}
-
-/* Nastavenie veľkosti pre bočné menu (sidemenu) */
-.sidebar {
-  font-size: 18px; /* Nastavte rovnakú veľkosť pre sidemenu */
-}
-
-/* Zabezpečenie konzistentnej šírky bočného menu */
-.sidebar__nav {
-  width: 250px; /* Môžete nastaviť šírku podľa potreby */
-}
-
-/* Zväčšenie písma v položkách bočného menu */
-.sidebar__nav li {
-  font-size: 18px; /* Rovnaká veľkosť ako hlavné menu */
-  padding: 10px 0; /* Nastavenie medzery medzi položkami */
-}
-
-/* Úprava veľkosti textu v položkách navigácie */
-.sidebar__nav a {
-  font-size: 18px;
-}
-
-/* Zväčšenie veľkosti pre nadpisy v bočnom menu */
-.sidebar h4 {
-  font-size: 20px;
-}
