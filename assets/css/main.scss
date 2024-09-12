@@ -29,27 +29,17 @@ search: false
 }
 
 /* Ak chceš fixovať header, môžeš pridať fixné pozicionovanie */
-.masthead {
+.site-header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Aby sa header zobrazoval nad ostatnými elementmi */
-  background-color: rgba(255, 255, 255, 0.9); /* Polopriehľadné pozadie, aby sa minimalizovalo presvitanie */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Tieň pre lepšiu viditeľnosť */
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Voliteľné */
 }
 
-.masthead__inner-wrap {
-  padding: 10px 0; /* Padding vo vnútri hlavičky */
-}
-
-.masthead__menu-item a {
-  padding: 15px 15px; /* Padding okolo položiek menu */
-  font-size: 18px; /* Veľkosť textu položiek menu */
-}
-
-/* Pridanie padding-top pre obsah, aby sa nezačínal pod hlavičkou */
-.initial-content {
-  padding-top: 120px; /* Zvýšený padding na začiatok obsahu */
+body {
+  padding-top: 60px; /* Prispôsobte podľa výšky menu */
 }
 
 
