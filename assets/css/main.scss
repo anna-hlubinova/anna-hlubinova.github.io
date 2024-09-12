@@ -49,13 +49,13 @@ search: false
 /* Sidebar nalavo */
 .sidebar {
   position: fixed; /* Fixné umiestnenie */
-  top: 200; /* Umiestnenie od vrchu stránky */
-  left: 0; /* Umiestnenie od ľavej strany stránky */
+  top: 300; /* Umiestnenie od vrchu stránky */
+  left: 20; /* Umiestnenie od ľavej strany stránky */
   width: 250px; /* Šírka sidebaru, môžeš upraviť podľa potreby */
   height: 50vh; /* Výška sidebaru na celú výšku obrazovky */
   overflow-y: auto; /* Povolenie vertikálneho rolovania */
   background-color: #f9f9f9; /* Pozadie sidebaru */
-  padding: 10px; /* Padding okolo obsahu sidebaru */
+  padding: 5px; /* Padding okolo obsahu sidebaru */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tieň pre lepšiu viditeľnosť */
   z-index: 1000; /* Zabezpečenie, že bude na vrchu ostatného obsahu */
 }
