@@ -46,13 +46,25 @@ search: false
   padding-top: 100px; /* Nastavte podľa výšky masthead */
 }
 
-.page-content h1 { font-size: 36px !important; }
-.page-content h1.title { font-size: 40px !important; }
-.page-content h2 { font-size: 32px !important; }
-.page-content h3 { font-size: 26px !important; }
-.page-content h4 { font-size: 20px !important; }
-.page-content h5 { font-size: 18px !important; }
-.page-content h6 { font-size: 14px !important; }
+/* Predpokladajme, že tvoja trieda pre sidebar je .sidebar */
+.sidebar {
+  position: fixed; /* Fixné umiestnenie */
+  top: 0; /* Umiestnenie od vrchu stránky */
+  right: 0; /* Umiestnenie od pravej strany stránky */
+  width: 250px; /* Šírka sidebaru, môžeš upraviť podľa potreby */
+  height: 100vh; /* Výška sidebaru na celú výšku obrazovky */
+  overflow-y: auto; /* Povolenie vertikálneho rolovania */
+  background-color: #f9f9f9; /* Pozadie sidebaru */
+  padding: 20px; /* Padding okolo obsahu sidebaru */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tieň pre lepšiu viditeľnosť */
+  z-index: 1000; /* Zabezpečenie, že bude na vrchu ostatného obsahu */
+}
+
+/* Aby bol obsah stránok posunutý na strane, kde je sidebar */
+.main-content {
+  margin-right: 270px; /* Uistite sa, že toto margin je väčšie ako šírka sidebaru */
+}
+
 
 
 
