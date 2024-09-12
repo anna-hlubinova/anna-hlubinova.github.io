@@ -65,21 +65,8 @@ search: false
   margin-left: 270px; /* Uprav podľa šírky sidebaru */
 }
 
-
-
-
-/* Trieda pre rozšírenú stránku doprava */
-.expanded-right .main-content {
-  width: calc(100% - 270px); /* Nastav šírku hlavného obsahu, aby využíval väčšiu časť obrazovky */
-  margin-left: 270px; /* Uistite sa, že je tu priestor pre sidebar */
-}
-
-.expanded-right .sidebar {
-  position: fixed; /* Urob sidebar fixným, ak chceš, aby sa pohyboval so stránkou */
-  top: 0;
-  left: 0;
-  width: 270px; /* Uisti sa, že šírka sidebaru je správna */
-  height: 100%; /* Zabezpečí, že sidebar bude pokrývať celú výšku stránky */
+body .sidebar {
+  top: 300px;
 }
 
 
