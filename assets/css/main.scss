@@ -8,4 +8,23 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+.sidebar {
+  font-size: 18px; /* Veľkosť textu pre celý sidebar */
+}
+
+.main-list {
+  font-size: 16px; /* Veľkosť textu pre hlavné zoznamy */
+}
+
+.item-title {
+  font-size: 20px; /* Veľkosť textu pre nadpisy */
+}
+
+.child-list {
+  font-size: 18px; /* Veľkosť textu pre vnorené zoznamy */
+}
+
+.child-item {
+  font-size: 18px; /* Veľkosť textu pre vnorené položky */
+}
 
