@@ -27,18 +27,16 @@ search: false
 .child-item {
   font-size: 18px; /* Veľkosť textu pre vnorené položky */
 }
-
-
 .masthead {
-  padding: 15px 20px; /* Zmenši padding okolo headera */
+  padding: 10px 20px; /* Zmenši padding okolo headera */
 }
 
 .masthead__inner-wrap {
-  padding: 15px 0; /* Zmenši padding vo vnútri hlavičky */
+  padding: 5px 0; /* Zmenši padding vo vnútri hlavičky */
 }
 
 .masthead__menu-item a {
-  padding: 15px 10px; /* Zmenši padding okolo položiek menu */
+  padding: 5px 10px; /* Zmenši padding okolo položiek menu */
   font-size: 16px; /* Zmenši veľkosť textu položiek menu, ak treba */
 }
 
@@ -53,6 +51,7 @@ search: false
 .initial-content {
   padding-top: 80px; /* Pridaj padding na začiatok obsahu, aby sa nezakryl pod hlavičkou */
 }
+
 
 
 
