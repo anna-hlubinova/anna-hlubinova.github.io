@@ -346,7 +346,7 @@ defaults:
       author_profile: true
 
 sidebars:
-  cvičenia_memm:
+  cvicenia_memm:
     - title: Cvičenia mEMM
       children:
         - title: "Cvičenie 1"
