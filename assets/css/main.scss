@@ -7,8 +7,3 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-.page__footer-copyright {
-  text-align: center; /* Centrovanie textu */
-  margin: 0 auto; /* Pridanie automatických okrajov pre centrovanie bloku, ak je to potrebné */
-}
