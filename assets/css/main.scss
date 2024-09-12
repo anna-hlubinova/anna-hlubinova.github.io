@@ -28,12 +28,16 @@ search: false
   font-size: 18px; /* Veľkosť textu pre vnorené položky */
 }
 
+
+
 .masthead {
-  padding: 30px 40px; /* Zvýš padding okolo headera */
+  padding: 30px 40px; /* Zvýšený padding okolo headera */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000; /* Aby sa header zobrazoval nad ostatnými elementmi */
+  background-color: #fff; /* Pridaj pozadie na header, napríklad biele */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Voliteľne: pridaj tieň pre lepšiu viditeľnosť */
 }
 
 .masthead__inner-wrap {
@@ -50,3 +54,4 @@ search: false
 .initial-content {
   padding-top: 120px; /* Zvýš padding na začiatok obsahu, aby sa nezakryl pod hlavičkou */
 }
+
