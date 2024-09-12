@@ -36,7 +36,8 @@ search: false
   top: 0;
   width: 100%;
   z-index: 1000; /* Aby sa header zobrazoval nad ostatnými elementmi */
-  background-color: #fff; /* Pridaj pozadie na header, napríklad biele */
+  background-color: rgba(255, 255, 255, 0.9); /* Pridaj polopriehľadné pozadie, aby sa minimalizovalo presvitanie */
+  backdrop-filter: blur(5px); /* Voliteľné: Pridaj rozmazanie pozadia pre lepšiu čitateľnosť */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Voliteľne: pridaj tieň pre lepšiu viditeľnosť */
 }
 
@@ -49,9 +50,9 @@ search: false
   font-size: 18px; /* Zvýš veľkosť textu položiek menu */
 }
 
-/* Ak máš ďalšie štýly na fixovanie headera, môžeš ich pridať tu */
-
+/* Zvýšenie padding-top pre obsah pod hlavičkou */
 .initial-content {
   padding-top: 120px; /* Zvýš padding na začiatok obsahu, aby sa nezakryl pod hlavičkou */
 }
+
 
