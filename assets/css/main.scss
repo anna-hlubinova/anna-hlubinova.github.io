@@ -7,3 +7,21 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+<style>
+  ul {
+    list-style-position: inside; /* Tento riadok zabezpečí, že odrážky sú zarovnané so textom */
+    padding-left: 0; /* Odstráni odsadenie zľava */
+  }
+
+  li {
+    margin-bottom: 10px; /* Vzdialenosť medzi jednotlivými odrážkami */
+  }
+
+  /* Ak chcete, aby text v odrážkach bol zarovnaný k určitému bodu */
+  .aligned-list {
+    list-style-position: inside;
+    padding-left: 20px; /* Určuje odsadenie textu od okraja */
+  }
+</style>
+
