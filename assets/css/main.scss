@@ -7,27 +7,3 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-/* Štýly pre sekciu privítania */
-.welcome-section {
-    text-align: center; /* Centrovanie textu */
-    margin: 20px; /* Okraje okolo sekcie */
-}
-
-h1 {
-    font-size: 24px; /* Veľkosť nadpisu */
-    margin-bottom: 10px; /* Medzera pod nadpisom */
-}
-
-ul {
-    list-style-type: disc; /* Typ zoznamu */
-    padding-left: 20px; /* Odstup od ľavého okraja */
-    font-size: 18px; /* Veľkosť textu pre položky zoznamu */
-    text-align: left; /* Zarovnanie textu v zozname */
-    max-width: 600px; /* Maximálna šírka zoznamu */
-    margin: 0 auto; /* Centrovanie zoznamu */
-}
-
-li {
-    margin-bottom: 10px; /* Medzera medzi položkami zoznamu */
-}
