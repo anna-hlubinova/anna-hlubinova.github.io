@@ -16,28 +16,36 @@ nav[role="navigation"] {
   background-color: white; // Nastav farbu pozadia podľa potreby
 }
 
-/* Nastavenie konzistentnej veľkosti pre hlavné menu */
-nav.nav-main {
-  font-size: 16px; /* Príklad nastavenia veľkosti písma */
-  line-height: 1.5; /* Nastavenie výšky riadkov pre lepšiu čitateľnosť */
+/* Zabezpečenie konzistentnej veľkosti písma pre hlavné menu */
+.nav-main,
+.nav-main ul,
+.nav-main li {
+  font-size: 18px; /* Zvýšte veľkosť podľa potreby */
+  line-height: 1.6;
 }
 
-/* Nastavenie konzistentnej veľkosti pre bočné menu (sidemenu) */
+/* Nastavenie veľkosti pre bočné menu (sidemenu) */
 .sidebar {
-  font-size: 16px; /* Rovnaká veľkosť ako hlavné menu */
+  font-size: 18px; /* Nastavte rovnakú veľkosť pre sidemenu */
 }
 
-.sidebar ul li {
-  padding: 10px 0; /* Pridanie medzery medzi položkami */
-}
-
-/* Ak máte špecifickú triedu pre bočné menu, prispôsobte veľkosť tam */
+/* Zabezpečenie konzistentnej šírky bočného menu */
 .sidebar__nav {
-  font-size: 16px;
+  width: 250px; /* Môžete nastaviť šírku podľa potreby */
 }
 
-/* Voliteľné: Ak chcete upraviť šírku bočného menu */
-.sidebar {
-  width: 250px; /* Nastavenie šírky */
+/* Zväčšenie písma v položkách bočného menu */
+.sidebar__nav li {
+  font-size: 18px; /* Rovnaká veľkosť ako hlavné menu */
+  padding: 10px 0; /* Nastavenie medzery medzi položkami */
 }
 
+/* Úprava veľkosti textu v položkách navigácie */
+.sidebar__nav a {
+  font-size: 18px;
+}
+
+/* Zväčšenie veľkosti pre nadpisy v bočnom menu */
+.sidebar h4 {
+  font-size: 20px;
+}
