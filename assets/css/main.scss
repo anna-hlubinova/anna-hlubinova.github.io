@@ -8,15 +8,4 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-.sidebar {
-  font-size: 18px; /* Veľkosť textu pre celý sidebar */
-}
-
-.sidebar h3 {
-  font-size: 20px; /* Veľkosť textu pre nadpisy v sidebar */
-}
-
-.sidebar ul {
-  font-size: 16px; /* Veľkosť textu pre zoznamy v sidebar */
-}
 
