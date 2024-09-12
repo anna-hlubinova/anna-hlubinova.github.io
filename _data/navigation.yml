@@ -6,7 +6,7 @@ main:
   - title: "Domáce úlohy mEMM"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Cvičenia mPMS"
-    url: /_pages/DU5_CR.html
+    url: /DU5_CR/
 
 docs:
   - title: Cvičenia mEMM
