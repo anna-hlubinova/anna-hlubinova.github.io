@@ -350,7 +350,7 @@ sidebars:
     - title: Cvičenia mEMM
       children:
         - title: "Cvičenie 1"
-          url: /DU5_CR/
+          url: /mEMM_Cv1/
 
   domace_ulohy_memm:
     - title: Domáce úlohy mEMM
