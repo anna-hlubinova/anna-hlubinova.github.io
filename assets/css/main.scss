@@ -24,33 +24,29 @@ search: false
   font-size: 18px; /* Veľkosť textu pre vnorené zoznamy */
 }
 
+.child-item {
+  font-size: 18px; /* Veľkosť textu pre vnorené položky */
+}
+
 .masthead {
-  padding: 15px 25px; /* Zmenši padding okolo headera */
-}
-
-.masthead__inner-wrap {
-  padding: 5px 0; /* Zmenši padding vo vnútri hlavičky */
-}
-
-.masthead__menu-item a {
-  padding: 10px 10px; /* Zmenši padding okolo položiek menu */
-  font-size: 16px; /* Zmenši veľkosť textu položiek menu, ak treba */
-}
-
-/* Ak chceš fixovať header, môžeš pridať fixné pozicionovanie */
-.masthead {
+  padding: 30px 40px; /* Zvýš padding okolo headera */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000; /* Aby sa header zobrazoval nad ostatnými elementmi */
 }
 
+.masthead__inner-wrap {
+  padding: 10px 0; /* Zvýš padding vo vnútri hlavičky */
+}
+
+.masthead__menu-item a {
+  padding: 15px 15px; /* Zvýš padding okolo položiek menu */
+  font-size: 18px; /* Zvýš veľkosť textu položiek menu */
+}
+
+/* Ak máš ďalšie štýly na fixovanie headera, môžeš ich pridať tu */
+
 .initial-content {
-  padding-top: 80px; /* Pridaj padding na začiatok obsahu, aby sa nezakryl pod hlavičkou */
+  padding-top: 120px; /* Zvýš padding na začiatok obsahu, aby sa nezakryl pod hlavičkou */
 }
-
-
-.child-item {
-  font-size: 18px; /* Veľkosť textu pre vnorené položky */
-}
-
