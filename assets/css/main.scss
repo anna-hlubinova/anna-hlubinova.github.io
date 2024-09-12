@@ -49,8 +49,8 @@ search: false
 /* Sidebar nalavo */
 .sidebar {
   position: fixed; /* Fixné umiestnenie */
-  top: 0; /* Umiestnenie od vrchu stránky */
-  left: 0; /* Umiestnenie od ľavej strany stránky */
+  top: 100; /* Umiestnenie od vrchu stránky */
+  left: 20; /* Umiestnenie od ľavej strany stránky */
   width: 250px; /* Šírka sidebaru, môžeš upraviť podľa potreby */
   height: 100vh; /* Výška sidebaru na celú výšku obrazovky */
   overflow-y: auto; /* Povolenie vertikálneho rolovania */
