@@ -24,6 +24,23 @@ search: false
   font-size: 18px; /* Veľkosť textu pre vnorené zoznamy */
 }
 
+.masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Zabezpečí, že bude na vrchu ostatného obsahu */
+  background-color: white; /* Nastavte farbu pozadia podľa vášho dizajnu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Jemný tieň, aby sa oddelila od obsahu */
+  padding: 10px 0; /* Trochu extra priestoru, ak je potrebné */
+}
+
+/* Zabezpečenie dostatočného miesta pre obsah pod navigáciou */
+.initial-content {
+  padding-top: 80px; /* Nastavte podľa výšky masthead */
+}
+
+
 .child-item {
   font-size: 18px; /* Veľkosť textu pre vnorené položky */
 }
