@@ -6,7 +6,7 @@ main:
   - title: "Domáce úlohy mEMM"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Cvičenia mPMS"
-    url: https://anna-hlubinova.github.io/_pages/DU5_CR.html
+    url: /_pages/DU5_CR.html
 
 docs:
   - title: Cvičenia mEMM
