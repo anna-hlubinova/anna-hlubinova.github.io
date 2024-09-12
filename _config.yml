@@ -116,11 +116,8 @@ author:
   name             : "Anna Hlubinová"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD. študent"
-  location:
-    - name: "Katedra aplikovanej matematiky"
-    - name: "a štatistiky"
-    - name: "FMFI UK"
-    - name: "Kancelária: M 232"
+  location         : "KAMŠ FMFI UK"
+
 
 
   email            : "Anna.Hlubinova@fmph.uniba.sk"
