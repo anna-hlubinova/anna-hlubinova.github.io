@@ -2,33 +2,12 @@
 # main links
 main:
   - title: "Cvičenia mEMM" 
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: /mEMM/
   - title: "Domáce úlohy mEMM"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Cvičenia mPMS"
     url: /DU5_CR/
+  - title: "Cvičenia mPMS"
+    url: /mPMS/
 
-docs:
-  - title: Cvičenia mEMM
-    children:
-      - title: "Cvičenie 1"
-        url: /docs/quick-start-guide/
-      - title: "Cvičenie 2"
-        url: /docs/structure/
-
-  - title: Domáce úlohy mEMM
-    children:
-      - title: "DÚ 1"
-        url: /docs/configuration/
-      - title: "DÚ 2"
-        url: /docs/navigation/
-
-  - title: Cvičenia mPMS
-    children:
-      - title: "Cvičenie 1"
-        url: /docs/quick-start-guide/
-      - title: "Cvičenie 2"
-        url: /docs/structure/
 
 
 
