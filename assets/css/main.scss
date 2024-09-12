@@ -46,11 +46,11 @@ search: false
   padding-top: 100px; /* Nastavte podľa výšky masthead */
 }
 
-/* Predpokladajme, že tvoja trieda pre sidebar je .sidebar */
+/* Sidebar nalavo */
 .sidebar {
   position: fixed; /* Fixné umiestnenie */
   top: 0; /* Umiestnenie od vrchu stránky */
-  right: 0; /* Umiestnenie od pravej strany stránky */
+  left: 0; /* Umiestnenie od ľavej strany stránky */
   width: 250px; /* Šírka sidebaru, môžeš upraviť podľa potreby */
   height: 100vh; /* Výška sidebaru na celú výšku obrazovky */
   overflow-y: auto; /* Povolenie vertikálneho rolovania */
@@ -60,9 +60,9 @@ search: false
   z-index: 1000; /* Zabezpečenie, že bude na vrchu ostatného obsahu */
 }
 
-/* Aby bol obsah stránok posunutý na strane, kde je sidebar */
+/* Posunutie hlavného obsahu doprava, aby sidebar neprekryl obsah */
 .main-content {
-  margin-right: 270px; /* Uistite sa, že toto margin je väčšie ako šírka sidebaru */
+  margin-left: 270px; /* Uprav podľa šírky sidebaru */
 }
 
 
