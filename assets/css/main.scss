@@ -62,25 +62,30 @@ search: false
 }
 
 .main-content {
-  margin-left: 270px; /* Posunutie hlavného obsahu doprava */
+  margin-left: 270px;
 }
 
 /* Responzívne štýly pre tablety a mobily */
 @media (max-width: 768px) {
   .sidebar {
-    position: relative; /* Sidebar sa presunie pod menu */
-    width: 100%; /* Sidebar zaberie celú šírku obrazovky */
-    top: 0;
+    position: relative;
+    width: 100%;
+    top: 0; /* Odstránime akýkoľvek offset odhora */
     left: 0;
     height: auto;
     box-shadow: none;
-    margin-top: 20px; /* Pridaj medzeru medzi menu a sidebar */
+    margin-top: 0; /* Žiadna medzera medzi menu a sidebarom */
+    padding: 10px; /* Mierne zväčšíme padding pre sidebar */
   }
+  
   .main-content {
-    margin-left: 0; /* Obsah nebude posunutý na menších obrazovkách */
+    margin-left: 0;
+  }
+
+  .initial-content {
+    padding-top: 0; /* Odstránenie prázdneho priestoru nad textom */
   }
 }
-
 
 
 body .sidebar {
