@@ -60,6 +60,7 @@ search: false
   padding: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  margin-left: 30px; 
 }
 
 .main-content {
@@ -120,7 +121,7 @@ search: false
 
   .sidebar {
     width: 300px; /* Zväčši šírku sidebaru */
-    margin-left: 30px; /* Väčší odstup od ľavého okraja */
+    margin-left: 60px; /* Väčší odstup od ľavého okraja */
   }
 
   .masthead {
