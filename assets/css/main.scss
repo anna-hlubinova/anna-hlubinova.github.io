@@ -199,38 +199,6 @@ search: false
   font-size: 13px; /* Veľkosť písma pre bloky kódu */
 }
 
-.rmarkdown table {
-  width: 100%; /* Šírka tabuľky na celú šírku kontajnera */
-  border-collapse: collapse; /* Zrušenie medzier medzi bunkami */
-}
-
-.rmarkdown th, .rmarkdown td {
-  padding: 8px; /* Padding v bunkách */
-  border: 1px solid #ddd; /* Okraj okolo buniek */
-  text-align: left; /* Zarovnanie textu v bunkách */
-}
-
-.rmarkdown th {
-  background-color: #f4f4f4; /* Pozadie pre hlavičky stĺpcov */
-}
-
-.rmarkdown a {
-  color: #007bff; /* Farba odkazu */
-  text-decoration: none; /* Bez podčiarknutia */
-}
-
-.rmarkdown a:hover {
-  text-decoration: underline; /* Podčiarknutie pri hover */
-}
-
-.rmarkdown ul, .rmarkdown ol {
-  margin-left: 20px; /* Odsadenie pre zoznamy */
-}
-
-.rmarkdown li {
-  margin-bottom: 0.5em; /* Priestor pod položkami zoznamu */
-}
-
 /* Štýl pre R kód v Markdown */
 .rmarkdown .highlight {
   background-color: #f5f5f5; /* Svetlé pozadie pre bloky kódu */
@@ -277,7 +245,6 @@ search: false
 .rmarkdown .highlight a {
   color: #005cc5; /* Farba pre odkazy v kóde */
 }
-
 
 /* Pre Highlight.js */
 .rmarkdown .hljs {
