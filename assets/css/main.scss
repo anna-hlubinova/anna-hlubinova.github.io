@@ -138,6 +138,69 @@ search: false
 }
 
 
+/* CSS pre R Markdown obsah */
+
+.rmarkdown h1, .rmarkdown h2, .rmarkdown h3, .rmarkdown h4, .rmarkdown h5, .rmarkdown h6 {
+  font-family: 'Arial', sans-serif; /* Font pre nadpisy */
+  color: #333; /* Farba textu nadpisov */
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.rmarkdown p {
+  line-height: 1.6; /* Zlepšenie riadkovania */
+  margin-bottom: 1em; /* Priestor pod odsekom */
+}
+
+.rmarkdown code {
+  font-family: 'Courier New', monospace; /* Font pre inline kód */
+  background-color: #f5f5f5; /* Svetlé pozadie pre inline kód */
+  padding: 2px 4px; /* Padding okolo inline kódu */
+  border-radius: 3px; /* Zaoblené rohy pre inline kód */
+}
+
+.rmarkdown pre {
+  font-family: 'Courier New', monospace; /* Font pre bloky kódu */
+  background-color: #f5f5f5; /* Svetlé pozadie pre bloky kódu */
+  padding: 10px; /* Padding okolo bloku kódu */
+  border-radius: 3px; /* Zaoblené rohy pre bloky kódu */
+  overflow-x: auto; /* Povolenie horizontálneho rolovania */
+}
+
+.rmarkdown table {
+  width: 100%; /* Šírka tabuľky na celú šírku kontajnera */
+  border-collapse: collapse; /* Zrušenie medzier medzi bunkami */
+}
+
+.rmarkdown th, .rmarkdown td {
+  padding: 8px; /* Padding v bunkách */
+  border: 1px solid #ddd; /* Okraj okolo buniek */
+  text-align: left; /* Zarovnanie textu v bunkách */
+}
+
+.rmarkdown th {
+  background-color: #f4f4f4; /* Pozadie pre hlavičky stĺpcov */
+}
+
+.rmarkdown a {
+  color: #007bff; /* Farba odkazu */
+  text-decoration: none; /* Bez podčiarknutia */
+}
+
+.rmarkdown a:hover {
+  text-decoration: underline; /* Podčiarknutie pri hover */
+}
+
+.rmarkdown ul, .rmarkdown ol {
+  margin-left: 20px; /* Odsadenie pre zoznamy */
+}
+
+.rmarkdown li {
+  margin-bottom: 0.5em; /* Priestor pod položkami zoznamu */
+}
+
+
+
 
 
 
