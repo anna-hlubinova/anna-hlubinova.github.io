@@ -50,10 +50,10 @@ search: false
 /* Základný štýl pre sidebar na väčších obrazovkách */
 .sidebar {
   position: fixed;
-  top: 100px; /* Nastavenie vzdialenosti od vrchu */
-  left: 20px; /* Nastavenie vzdialenosti od ľavej strany */
-  width: 250px; /* Šírka sidebaru */
-  height: 50vh; /* Výška sidebaru */
+  top: 100px;
+  left: 20px;
+  width: 250px;
+  height: 50vh;
   overflow-y: auto;
   background-color: #f9f9f9;
   padding: 5px;
@@ -65,39 +65,23 @@ search: false
   margin-left: 270px; /* Posunutie hlavného obsahu doprava */
 }
 
-/* Responzívne štýly pre tablety (šírka obrazovky do 768px) */
+/* Responzívne štýly pre tablety a mobily */
 @media (max-width: 768px) {
   .sidebar {
-    position: relative;
-    width: 100%; /* Sidebar bude zaberat celú šírku */
-    top: 0; /* Zarovnané na vrch */
-    height: auto; /* Automatická výška */
-    box-shadow: none; /* Odstránenie tieňa */
-  }
-  .main-content {
-    margin-left: 0; /* Odstránenie ľavého odsadenia pre obsah */
-  }
-}
-
-/* Responzívne štýly pre mobilné zariadenia (šírka obrazovky do 480px) */
-@media (max-width: 480px) {
-  .sidebar {
-    position: relative;
+    position: relative; /* Sidebar sa presunie pod menu */
     width: 100%; /* Sidebar zaberie celú šírku obrazovky */
     top: 0;
+    left: 0;
     height: auto;
-    padding: 10px; /* Trochu viac priestoru vo vnútri sidebaru */
+    box-shadow: none;
+    margin-top: 20px; /* Pridaj medzeru medzi menu a sidebar */
   }
   .main-content {
-    margin-left: 0; /* Odstránenie odsadenia pre obsah */
+    margin-left: 0; /* Obsah nebude posunutý na menších obrazovkách */
   }
 }
 
 
-/* Posunutie hlavného obsahu doprava, aby sidebar neprekryl obsah */
-.main-content {
-  margin-left: 270px; /* Uprav podľa šírky sidebaru */
-}
 
 body .sidebar {
   top: 100px;
