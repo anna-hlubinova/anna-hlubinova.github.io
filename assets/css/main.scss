@@ -111,6 +111,31 @@ search: false
   }
 }
 
+@media (min-width: 1500px) {
+  .main-content {
+    margin-left: 300px; /* Zväčšenie odsadenia od sidebaru */
+    max-width: 1400px; /* Maximálna šírka obsahu pre lepšiu čitateľnosť */
+    padding: 20px; /* Viac priestoru pre obsah */
+  }
+
+  .sidebar {
+    width: 300px; /* Zväčši šírku sidebaru */
+    margin-left: 30px; /* Väčší odstup od ľavého okraja */
+  }
+
+  .masthead {
+    padding: 10px 0; /* Viac priestoru pre hlavičku */
+  }
+
+  .masthead .site-title {
+    font-size: 36px; /* Zväčši názov stránky */
+  }
+
+  body {
+    font-size: 20px; /* Zvýš veľkosť textu pre lepšiu čitateľnosť */
+  }
+}
+
 
 
 
