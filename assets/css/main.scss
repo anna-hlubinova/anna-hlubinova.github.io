@@ -46,19 +46,53 @@ search: false
   padding-top: 100px; /* Nastavte podľa výšky masthead */
 }
 
-/* Sidebar nalavo */
+
+/* Základný štýl pre sidebar na väčších obrazovkách */
 .sidebar {
-  position: fixed; /* Fixné umiestnenie */
-  top: 50; /* Umiestnenie od vrchu stránky */
-  left: 20; /* Umiestnenie od ľavej strany stránky */
-  width: 250px; /* Šírka sidebaru, môžeš upraviť podľa potreby */
-  height: 50vh; /* Výška sidebaru na celú výšku obrazovky */
-  overflow-y: auto; /* Povolenie vertikálneho rolovania */
-  background-color: #f9f9f9; /* Pozadie sidebaru */
-  padding: 5px; /* Padding okolo obsahu sidebaru */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tieň pre lepšiu viditeľnosť */
-  z-index: 1000; /* Zabezpečenie, že bude na vrchu ostatného obsahu */
+  position: fixed;
+  top: 100px; /* Nastavenie vzdialenosti od vrchu */
+  left: 20px; /* Nastavenie vzdialenosti od ľavej strany */
+  width: 250px; /* Šírka sidebaru */
+  height: 50vh; /* Výška sidebaru */
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
+
+.main-content {
+  margin-left: 270px; /* Posunutie hlavného obsahu doprava */
+}
+
+/* Responzívne štýly pre tablety (šírka obrazovky do 768px) */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%; /* Sidebar bude zaberat celú šírku */
+    top: 0; /* Zarovnané na vrch */
+    height: auto; /* Automatická výška */
+    box-shadow: none; /* Odstránenie tieňa */
+  }
+  .main-content {
+    margin-left: 0; /* Odstránenie ľavého odsadenia pre obsah */
+  }
+}
+
+/* Responzívne štýly pre mobilné zariadenia (šírka obrazovky do 480px) */
+@media (max-width: 480px) {
+  .sidebar {
+    position: relative;
+    width: 100%; /* Sidebar zaberie celú šírku obrazovky */
+    top: 0;
+    height: auto;
+    padding: 10px; /* Trochu viac priestoru vo vnútri sidebaru */
+  }
+  .main-content {
+    margin-left: 0; /* Odstránenie odsadenia pre obsah */
+  }
+}
+
 
 /* Posunutie hlavného obsahu doprava, aby sidebar neprekryl obsah */
 .main-content {
