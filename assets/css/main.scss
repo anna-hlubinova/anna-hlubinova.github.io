@@ -39,6 +39,7 @@ search: false
   background-color: white; /* Nastavte farbu pozadia podľa vášho dizajnu */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Jemný tieň, aby sa oddelila od obsahu */
   padding: 5px 0; /* Trochu extra priestoru, ak je potrebné */
+  margin-bottom: 10px; /* Priestor pod hlavným menu */
 }
 
 /* Zabezpečenie dostatočného miesta pre obsah pod navigáciou */
@@ -65,20 +66,28 @@ search: false
   margin-left: 270px;
 }
 
-/* Responzívne štýly pre tablety a mobily */
+/* Responzívne zobrazenie pre sidebar na mobilných zariadeniach */
 @media (max-width: 768px) {
   .sidebar {
-    display: none; /* Skryjeme sidebar na mobilných zariadeniach */
-  }
-  
-  .main-content {
-    margin-left: 0; /* Odstránime margin pre obsah, aby zabral celú šírku stránky */
+    position: relative; /* Namiesto fixed bude sidebar relatívny */
+    top: 0; /* Zabezpečí, že začne hneď pod hlavným menu */
+    left: 0;
+    width: 100%; /* Sidebar bude cez celú šírku obrazovky */
+    margin-top: 10px; /* Pridáme trochu miesta pod hlavným menu */
+    height: auto; /* Sidebar nebude fixný na výšku, prispôsobí sa obsahu */
+    background-color: #f9f9f9; /* Zachováme pozadie */
+    padding: 10px; /* Padding pre príjemný vzhľad */
+    box-shadow: none; /* Odstránime tieň na mobilných zariadeniach */
+    z-index: 999; /* Znížime z-index, aby neprekrýval hlavné menu */
   }
 
-  .initial-content {
-    padding-top: 100px; /* Upravíme padding nad obsahom podľa výšky menu */
+  /* Hlavný obsah už nebude potrebovať veľké marginy */
+  .main-content {
+    margin-left: 0; /* Žiadne odsadenie pre hlavný obsah na mobilných zariadeniach */
   }
 }
+
+
 
 
 
