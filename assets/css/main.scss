@@ -67,7 +67,7 @@ search: false
 }
 
 /* Responzívne zobrazenie pre sidebar na mobilných zariadeniach */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .sidebar {
     position: relative; /* Namiesto fixed bude sidebar relatívny */
     top: 0; /* Zabezpečí, že začne hneď pod hlavným menu */
