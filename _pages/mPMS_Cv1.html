@@ -11,23 +11,42 @@ classes: wide
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>\Zoznam príkladov</title>
+    <title>Zoznam príkladov</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-        body {
-            font-size: 14px; /* Zmenši písmo na celom webe */
+        .content-area { 
+            font-size: 15px; /* Zmenší písmo len pre obsah */
         }
-        h1 {
+        .content-area h1 {
             font-size: 22px;
         }
-        h2 {
+        .content-area h2 {
             font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <h1>Vybrané matematické príklady</h1>
+    <div class="content-area">
+    <h1>Zoznam príkladov</h1>
+
+    <h2>Príklad 2</h2>
+    <p>
+        Majme dané postupnosti nezávislých rovnako rozdelených náhodných premenných \( X_t, Y_t \), pričom:
+    </p>
+    <ul>
+        <li>\( P(X_t = 0) = P(X_t = 1) = \frac{1}{2} \),</li>
+        <li>\( P(Y_t = -1) = P(Y_t = 1) = \frac{1}{2} \),</li>
+        <li>Pre ľubovoľné \( s, t \) sú \( X_t \) a \( Y_s \) nezávislé.</li>
+    </ul>
+    <p>
+        Definujme \( Z_t = X_t(1 - X_{t-1})Y_t \). Dokážte, že:
+    </p>
+    <ul>
+        <li>\( Z_t \) je biely šum,</li>
+        <li>\( Z_t \) nie je postupnosť nezávislých rovnako rozdelených náhodných premenných.</li>
+    </ul>
+
 
     <h2>Príklad 4</h2>
     <p>
@@ -55,5 +74,6 @@ classes: wide
     <p>
         Odvoďte autokorelačnú funkciu procesu \( y_t = u_t - \frac{1}{2} u_{t-1}^2 \), ak biely šum \( u_t \) predstavuje realizácie nezávislých náhodných premenných s normálnym rozdelením.
     </p>
+    </div>
 </body>
 </html>
