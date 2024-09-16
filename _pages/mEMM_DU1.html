@@ -30,11 +30,24 @@ classes: wide
     <div class="content-area">
         <h1>Domáca úloha 1</h1>
         <ul>
-          <li> Platia <a href="všeobecné pokyny"></a>https://anna-hlubinova.github.io/mEMM_DU/ </li>
+          <li> Platia <a href="https://anna-hlubinova.github.io/mEMM_DU/"> všeobecné pokyny </a> </li>
           <li><b>Deadline: 13.10.2024, 23:59:59 </b></li>
           <li> Rezervácia dát pre Príklad 1 prebieha v tabuľke <a href="https://bit.ly/3zcqIAf" target="_blank">https://bit.ly/3zcqIAf</a> v hárku DÚ 1. </li>
         </ul>
-        <h2>Príklad 2 (5 bodov)</h2>
+
+        <h2> Príklad 1: Výnosy akcií (5 bodov)</h2>
+        <p> Tak ako na cvičení, pomocou knižnice </ode>quantmod</code> načítame priamo do R-ka ceny akcií a zistíme, či sa ich výnosy dajú modelovať ako biely šum. </p>
+        <p>Zvoľte si firmu (každý, resp. každá skupina inú) a stiahnite si ceny akcií tejto firmy za zvolené obdobie, minimálne za jeden rok. Funkciou <code>to.weekly</code> transformujte dáta na týždenné a vypočítajte logaritmické výnosy. Testujte pomocou ACF a Ljung-Boxovho testu, že tieto výnosy sa dajú modelovať ako konštanta (stredná hodnota výnosov) plus biely šum. V texte domácej úlohe uveďte:</p>
+    
+        <ul>
+            <li><strong>Názov zvolenej firmy a krátku informáciu o tejto firme</strong> (stručne - stačí jedna veta, prípadne niekoľko viet).</li>
+            <li><strong>Graf priebehu cien akcie a výnosov</strong></li>
+            <li><strong>Výberovú autokorelačnú funkciu výnosov a jej interpretáciu</strong> (Sú všetky autokorelácie nesignifikantné? Ktoré sú signifikantné?)</li>
+            <li><strong>Výsledky Ljung-Boxovho testu pre hodnoty lagu od 1 až po zvolenú hornú hranicu</strong>. P-hodnoty znázornite graficky ako na cvičení, spolu s porovnaním s hodnotou 0.05. Interpretujte výsledky.</li>
+            <li><strong>Zhodnotenie modelu</strong>: Považujete model "výnosy sú konštanta (t. j. priemerný výnos) plus biely šum" za dobrý model pre vaše dáta? Prečo?</li>
+        </ul>
+          
+        <h2> Príklad 2: Teoretický príklad (5 bodov)</h2>
         <p>
             <i>Jeden teoretický príklad tohto typu je v hodnote 10 bodov súčasťou skúšky.</i>
         </p>
