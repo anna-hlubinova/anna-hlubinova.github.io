@@ -352,7 +352,7 @@ defaults:
 
 sidebars:
   cvicenia_memm:
-    - title: Cvičenia mEMM
+    - title: "Cvičenia mEMM"
       children:
         - title: "Cvičenie 1"
           url: /docs/mEMM_Cv1.html
