@@ -10,6 +10,11 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -350,7 +355,7 @@ sidebars:
     - title: Cvičenia mEMM
       children:
         - title: "Cvičenie 1"
-          url: /mEMM_Cv1/
+          url: /docs/mEMM_Cv1.html
 
   domace_ulohy_memm:
     - title: Domáce úlohy mEMM
