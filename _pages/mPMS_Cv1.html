@@ -57,18 +57,15 @@ classes: wide
         <li>\( Z_t \) nie je postupnosť nezávislých rovnako rozdelených náhodných premenných.</li>
     </ol>
 
-    <h2>Príklad 3 (str. 36 prednáškových slajdov)</h2>
-    <p>
-        Nech \( z_t \) je proces, ktorého hodnoty sú nezávislé náhodné premenné s rozdelením \(N (0,1)\). Ukážte, že nasledujúci proces je stacionárny a vypočítajte jeho ACF:
-    </p>
-    \[
-    y_t =
-    \begin{cases} 
-    z_t, & \text{pre } t \text{ nepárne}, \\
-    \frac{1}{\sqrt{2}} \left(z_t^2-1\right), & \text{pre } t \text{ párne}.
-    \end{cases}
-    \]
 
+    <h2>Príklad 3</h2>
+    <p> 
+      Nech \(u\) je biely šum, ktorého hodnoty sú nezávislé náhodné premenné s normálnym rozdelením. Definujme proces \(x_t=u_t u_{t−1}\).
+    </p>
+        <ol>
+          <li>Vypočítajte strednú hodnotu, disperziu a autokovariancie procesu \(x_t\).</li>
+          <li>Rozhodnite, či je tento proces stacionárny.</li>
+        </ol> 
 
     <h2>Príklad 4</h2>
     <p>
@@ -98,14 +95,18 @@ classes: wide
         Odvoďte autokorelačnú funkciu procesu \( y_t = u_t - \frac{1}{2} u_{t-1}^2 \), ak biely šum \( u_t \) predstavuje realizácie nezávislých náhodných premenných s normálnym rozdelením.
     </p>
 
-    <h2>Príklad 9</h2>
-    <p> 
-      Nech \(u\) je biely šum, ktorého hodnoty sú nezávislé náhodné premenné s normálnym rozdelením. Definujme proces \(x_t=u_t u_{t−1}\).
+    <h2>Príklad 9 (str. 36 prednáškových slajdov)</h2>
+    <p>
+        Nech \( z_t \) je proces, ktorého hodnoty sú nezávislé náhodné premenné s rozdelením \(N (0,1)\). Ukážte, že nasledujúci proces je stacionárny a vypočítajte jeho ACF:
     </p>
-        <ol>
-          <li>Vypočítajte strednú hodnotu, disperziu a autokovariancie procesu \(x_t\).</li>
-          <li>Rozhodnite, či je tento proces stacionárny.</li>
-        </ol> 
+    \[
+    y_t =
+    \begin{cases} 
+    z_t, & \text{pre } t \text{ nepárne}, \\
+    \frac{1}{\sqrt{2}} \left(z_t^2-1\right), & \text{pre } t \text{ párne}.
+    \end{cases}
+    \]
+
     </div>
 </body>
 </html>
