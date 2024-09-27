@@ -1,0 +1,62 @@
+---
+layout: single
+author_profile: false
+sidebar: cvicenia_mpms
+permalink: /mPMS_Cv3/
+classes: wide
+---
+
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoznam príkladov</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .content-area { 
+            font-size: 15px; /* Zmenší písmo len pre obsah */
+        }
+        .content-area h1 {
+            font-size: 22px;
+        }
+        .content-area h2 {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Príklad 1</h1>
+    <p>Zistite, či sú nasledovné AR procesy stacionárne:</p>
+    <ul>
+        <li>x<sub>t</sub> = 5 + 1.3x<sub>t−1</sub> − 0.4x<sub>t−2</sub> + u<sub>t</sub></li>
+        <li>x<sub>t</sub> = 2 + 0.8x<sub>t−1</sub> − 0.1x<sub>t−2</sub> + u<sub>t</sub></li>
+        <li>(1 + 0.3L + 0.2L<sup>2</sup>)x<sub>t</sub> = 5 + u<sub>t</sub></li>
+        <li>x<sub>t</sub> = 0.25 + 0.1x<sub>t−1</sub> + 0.2x<sub>t−3</sub> + u<sub>t</sub></li>
+        <li>(1 + 3L − 0.1L<sup>2</sup> + 0.2L<sup>3</sup>)x<sub>t</sub> = u<sub>t</sub></li>
+    </ul>
+
+    <h1>Príklad 2</h1>
+    <p>Uvažujme proces x<sub>t</sub> = 5 − 0.4x<sub>t−1</sub> + 0.1x<sub>t−2</sub> + u<sub>t</sub>.</p>
+    <ul>
+        <li>Ukážte, že je proces stacionárny.</li>
+        <li>Odvoďte diferenčnú rovnicu a začiatočné podmienky pre koeficienty Woldovej reprezentácie.</li>
+        <li>Vypočítajte rekurentne niekoľko prvých členov. Potom odvoďte explicitný predpis pre všeobecný člen.</li>
+    </ul>
+
+    <h1>Príklad 3</h1>
+    <p>Uvažujme proces x<sub>t</sub> = 5 + 0.4x<sub>t−1</sub> − 0.1x<sub>t−2</sub> + u<sub>t</sub>.</p>
+    <ul>
+        <li>Ukážte, že je proces stacionárny.</li>
+        <li>Odvoďte diferenčnú rovnicu a začiatočné podmienky pre koeficienty Woldovej reprezentácie.</li>
+        <li>Vypočítajte rekurentne niekoľko prvých členov. Potom odvoďte explicitný predpis pre všeobecný člen.</li>
+    </ul>
+
+    <h1>Príklad 4</h1>
+    <p>Vyjadrite podmienku stacionarity pre AR(2) proces v tvare nerovností pre parametre procesu a toto tvrdenie dokážte.</p>
+
+    <h1>Príklad 5</h1>
+    <p>Pre aké hodnoty parametra k je proces x<sub>t</sub> = x<sub>t−1</sub> + kx<sub>t−2</sub> + u<sub>t</sub> stacionárny? (môžete využiť podmienku odvodenú v predošlom príklade)</p>
+</body>
+</html>
