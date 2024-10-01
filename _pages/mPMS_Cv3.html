@@ -33,7 +33,7 @@ classes: wide
     <h2>Príklad 1</h2>
     <p>Zistite, či sú nasledovné AR procesy stacionárne:</p>
     <ul>
-        <li>\(x_t = 5 + 1.3x_{t-1} - 0.4x_{t-2} + u_t\)</li>
+        <li>\(x_t = 5 + 0.8x_{t-1} - 0.4x_{t-2} + u_t\)</li>
         <li>\(x_t = 0.8x_{t-1} + 0.3x_{t-2} + 0.2x_{t-3} + u_t\)</li>
         <li>\(x_t = 0.25 + 0.1x_{t-1} + 0.2x_{t-3} + u_t\)</li>
         <li>\((1 + 3L - 0.1L^2 + 0.2L^3)x_t = u_t\)</li>
@@ -61,6 +61,11 @@ classes: wide
 
     <h2>Príklad 5</h2>
     <p>Pre aké hodnoty parametra \(k\) je proces \(x_t = x_{t-1} + kx_{t-2} + u_t\) stacionárny? (môžete využiť podmienku odvodenú v predošlom príklade)</p>
+    Skontrolujte, či sa vaše výpočty zhodujú s numerickými na nasledujúcom obrázku.
+
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/AR2_stabilita.jpg" alt="">
+
+    Prečo pre niektoré \(k\) je len jedna absolútna hodnota (napríklad \(k= -1.5\) - modrá), kým pre iné sú dve (\(k= -0.2\) - zelená, \(k= 0.5\) - hnedá)?</li>
     </div>
 </body>
 </html>
