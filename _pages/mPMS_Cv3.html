@@ -28,19 +28,9 @@ classes: wide
 </head>
 <body>
     <div class="content-area">
-    <h1>Cvičenie 3: AR(2) procesy, Woldova reprezentácia, stacionarita</h1>
+    <h1>Cvičenie 3: AR(p) model, stacionarita a Woldova reprezentácia</h1>
 
     <h2>Príklad 1</h2>
-    <p>Zistite, či sú nasledovné AR procesy stacionárne:</p>
-    <ul>
-        <li>\(x_t = 5 + 0.8x_{t-1} - 0.4x_{t-2} + u_t\)</li>
-        <li>\(x_t = 0.8x_{t-1} + 0.3x_{t-2} + 0.2x_{t-3} + u_t\)</li>
-        <li>\(x_t = 0.25 + 0.1x_{t-1} + 0.2x_{t-3} + u_t\)</li>
-        <li>\((1 + 3L - 0.1L^2 + 0.2L^3)x_t = u_t\)</li>
-    </ul>
-    Vypočítajte strednú hodnotu stacionárnych procesov.
-
-    <h2>Príklad 2</h2>
     <p>Uvažujme proces \(x_t = 5 - 0.4x_{t-1} + 0.1x_{t-2} + u_t\).</p>
     <ul>
         <li>Ukážte, že je proces stacionárny.</li>
@@ -48,13 +38,23 @@ classes: wide
         <li>Vypočítajte rekurentne niekoľko prvých členov. Potom odvoďte explicitný predpis pre všeobecný člen.</li>
     </ul>
 
-    <h2>Príklad 3</h2>
+    <h2>Príklad 2</h2>
     <p>Uvažujme proces \(x_t = 5 + 0.4x_{t-1} - 0.1x_{t-2} + u_t\).</p>
     <ul>
         <li>Ukážte, že je proces stacionárny.</li>
         <li>Odvoďte diferenčnú rovnicu a začiatočné podmienky pre koeficienty Woldovej reprezentácie.</li>
         <li>Vypočítajte rekurentne niekoľko prvých členov. Potom odvoďte explicitný predpis pre všeobecný člen.</li>
     </ul>
+
+    <h2>Príklad 3</h2>
+    <p>Zistite, či sú nasledovné AR procesy stacionárne:</p>
+    <ul>
+        <li>\( (1 + 0.3L + 0.2L^2)x_t = u_t\)/li>
+        <li>\( (1 - 0.25L + 0.6L^2 - 0.55L^3)x_t = u_t\)/li>
+        <li>\(x_t = 0.8x_{t-1} + 0.3x_{t-2} + 0.2x_{t-3} + u_t\)</li>
+        <li>\(x_t = 0.25 + 0.1x_{t-1} + 0.2x_{t-3} + u_t\)</li>
+    </ul>
+    Vypočítajte strednú hodnotu stacionárnych procesov.
 
     <h2>Príklad 4</h2>
     <p>Vyjadrite podmienku stacionarity pre AR(2) proces v tvare nerovností pre parametre procesu a toto tvrdenie dokážte.</p>
