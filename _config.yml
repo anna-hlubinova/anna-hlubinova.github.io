@@ -356,6 +356,8 @@ sidebars:
       children:
         - title: "Cvičenie 1"
           url: /mEMM_Cv1.html
+        - title: "Cvičenie 2"
+          url: /mEMM_Cv2.html
 
   domace_ulohy_memm:
     - title: Domáce úlohy mEMM
