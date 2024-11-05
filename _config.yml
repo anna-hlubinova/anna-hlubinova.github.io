@@ -358,6 +358,8 @@ sidebars:
           url: /mEMM_Cv1.html
         - title: "Cvičenie 2"
           url: /mEMM_Cv2.html
+        - title: "Cvičenie 3"
+          url: /mEMM_Cv3/
 
   domace_ulohy_memm:
     - title: Domáce úlohy mEMM
@@ -385,3 +387,5 @@ sidebars:
           url: /mPMS_Cv4.html
         - title: "Cvičenie 5"
           url: /mPMS_Cv5.html
+        - title: "Cvičenie 6"
+          url: /mPMS_Cv6/
