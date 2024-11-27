@@ -1590,11 +1590,9 @@ plot(y)</code></pre>
 <div id="ar1-proces-pozorovaný-s-chybou" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> AR(1) proces pozorovaný
 s chybou</h1>
-<p>Vygenerjeme AR(1) proces <span class="math inline">\(y\)</span>:</p>
+<p>Vygenerujeme AR(1) proces <span class="math inline">\(y\)</span>:</p>
 <pre class="r"><code>set.seed(12345)
 y &lt;- arima.sim(n=200, list(ar = c(0.9)), sd=0.1)</code></pre>
-<p>Pozrite si data frame <code>wold</code>, aby ste zistili, akú má
-štruktúru.</p>
 <p>Pozorovať ho ale budeme s chybou <code>eps</code>, vidíme teda proces
 <span class="math inline">\(x\)</span>:</p>
 <pre class="r"><code>eps &lt;- rnorm(200)/15
@@ -1631,6 +1629,8 @@ premennej gas.</p>
 modely nie sú v skutočnosti až také odlišné.</p>
 <p>Definujte</p>
 <pre class="r"><code>wold &lt;- expand.grid(k=as.factor(1:10), model=c(&quot;ar4&quot;,&quot;ma3&quot;))</code></pre>
+<p>Pozrite si data frame <code>wold</code>, aby ste zistili, akú má
+štruktúru.</p>
 <p>Do dataframu <code>wold</code> pridajte stĺpec <code>psi</code> s
 koeficientami <span class="math inline">\(\psi_k\)</span> Woldovej
 reprezentácie pre príslušné modely.</p>
