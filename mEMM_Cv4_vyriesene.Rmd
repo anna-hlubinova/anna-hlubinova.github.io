@@ -1,0 +1,351 @@
+---
+title: "Cvičenie 4: ARMA procesy, testovanie jednotkového koreňa"
+#author: "Anna Hlubinová"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+    number_sections: true
+    #toc_depth: 1  # Nastav na 1, aby sa zobrazovali iba hlavné sekcie
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,  warning = FALSE, message = FALSE) 
+```
+
+# Inštalácia knižníc v R-ku
+
+Začneme s inštaláciou knižníc potrebných na toto cvičenie. Spustením nasledovného príkazu sa nainštalujú tie z knižníc, ktoré nainštalované nie sú, a zároveň sa aj načítajú.
+
+```{r packages}
+# názvy balíkov, ktoré budú potrebné pre cvičenie 1
+packages <- c("astsa", "urca", "datasets", "ggplot2", "forecast")
+
+# inštalácia balíkov, ak nie sú nainštalované
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages],dependencies=TRUE)
+}
+
+# načítanie balíkov
+invisible(lapply(packages, library, character.only = TRUE))
+```
+
+# Dáta na samostatnú prácu
+
+Zadanie a otázky sú vždy rovnaké ako v modelovom príklade.
+
+## Dáta _BJsales_ z knižnice `datasets`
+
+Popis dát z helpu: _The sales time series BJsales and leading indicator BJsales.lead each contain 150 observations. _
+
+```{r}
+y <- window(BJsales, end=130)
+plot(y)
+```
+
+Vidíme, že v dátach je trend, takže ich určite treba aspoň jedenkrát diferencovať.
+
+```{r}
+plot(diff(y))
+```
+
+Testujme prítomnosť jednotkového koreňa v diferenciách. Keďže v pôvodných dátach bol trend, v teste jednotkového koreňa pre diferencie volíme type="drift". Model pre diferencie teda bude obsahovať konštantu. Konštantný člen v modeli pre diferencie totiž znamená lineárny trend v pôvodných dátach a tento trend sa dostane aj do predikcií.
+
+
+```{r}
+summary(ur.df(diff(y), lags = 5, selectlags = "BIC", type = "drift"))
+```
+Testová štatistika (-5.2231) je menšia ako kritická hodnota (-2.88), preto sa hypotéza o jednotkovom koreni zamieta. Dáta ďalej netreba diferencovať. Diferencie sú stacionárne.
+
+Ideme hľadať ARMA model pre diferencie:
+
+```{r}
+acf2(diff(y))
+```
+
+Tipy: Buď AR(2) alebo MA(4).
+
+```{r}
+ar2 <- sarima(y, 2,1,0)  # rezidua OK, BIC = 3.661291 
+```
+
+```{r}
+ma4 <- sarima(y, 0,1,4)  #rezidua OK, BIC = 3.723177 , 
+```
+
+AR(2) má menšie BIC. Overíme ešte stacionaritu.
+
+Všeobecný postup:
+
+```{r}
+koef <- ar2$fit$coef
+koef_ar <- koef[grep("^ar",names(koef))]
+```
+
+Absolútne hodnoty koreňov polynómu potom sú
+```{r}
+abs(polyroot(c(1,-koef_ar)))
+```
+Obe sú väčšie ako 1, proces je stacionárny (aj invertovateľný lebo je to AR).
+
+Predikcie:
+```{r}
+sarima.for(y, 20,2,1,0)
+lines(window(BJsales, start=131), col="blue")
+```
+
+## Dáta _WWWusage_ z knižnice `datasets`
+
+Popis dát z helpu: _A time series of the numbers of users connected to the Internet through a server every minute._
+
+```{r}
+y <- window(WWWusage, start = 1, end = 90)
+plot(y)
+```
+
+V dátach nie je lineárny trend. Testujme prítomnosť jednotkového koreňa. Stredná hodnota je niekde okolo 140, preto volíme type = "drift".
+
+```{r}
+summary(ur.df(y, lags = 5, selectlags = "BIC", type = "drift"))
+```
+
+Testová štatistika (-2.6373) je väčšia ako kritická hodnota (-2.89), preto sa hypotéza o jednotkovom koreni nezamieta. Dáta treba diferencovať.
+
+```{r}
+plot(diff(y))
+```
+
+Keďže v pôvodných dátach nebol trend, v teste jednotkového koreňa pre diferencie volíme type="none". Model pre diferencie potom nebude obsahovať konštantu. Konštantný člen v modeli pre diferencie by totiž znamenal lineárny trend v pôvodných dátach a tento trend by sa dostal aj do predikcií, čo nechceme.
+
+```{r}
+summary(ur.df(diff(y), lags = 5, selectlags = "BIC", type = "none"))
+```
+
+Testová štatistika (-2.3856) je menšia ako kritická hodnota (-1.95), preto sa hypotéza o jednotkovom koreni zamieta. Dáta ďalej netreba diferencovať, sú stacionárne.
+
+Ideme hľadať ARMA model:
+
+```{r}
+acf2(diff(y))
+```
+
+Poďla PACF to vyzerá na AR(3). Vyskúšame aj zmiešaný ARMA model.
+
+```{r}
+ar3 <- sarima(y, 3,1,0, no.constant = TRUE) # rezidua OK, BIC = 5.308413 
+```
+
+```{r}
+arma11 <- sarima(y, 1,1,1, no.constant = TRUE) # rezidua OK, BIC = 5.285761 
+```
+
+
+Menšie BIC má ARMA(1,1) pre prvé diferencie.
+
+Overíme ešte stacionaritu a invertovateľnosť.
+
+Stacionarita:
+
+```{r}
+koef <- arma11$fit$coef
+koef_ar <- koef[grep("^ar",names(koef))]
+```
+
+Absolútna hodnota koreňa polynómu potom je
+```{r}
+abs(polyroot(c(1,-koef_ar)))
+```
+Teda viac ako 1, proces je stacionárny.
+
+Invertovateľnosť:
+
+```{r}
+koef_ma <- koef[grep("^ma",names(koef))]
+```
+
+Absolútna hodnota koreňa polynómu potom je
+```{r}
+abs(polyroot(c(1,koef_ma)))
+```
+Teda viac ako 1, proces je invertovateľný.
+
+Predikcie:
+```{r}
+sarima.for(y, 10,1,1,1, no.constant = TRUE)
+lines(window(WWWusage, start=91), col="blue")
+```
+
+
+## Dáta _faithful_ z knižnice `datasets`
+
+Popis dát z helpu: _Waiting time between eruptions and the duration of the eruption for the Old Faithful geyser in Yellowstone National Park, Wyoming, USA._
+
+```{r}
+y <- ts(faithful[, 1])
+y <- window(y, end=250)
+plot(y)
+```
+
+V dátach nie je trend. Stredná hodnota niekde okolo 3.5 => type="drift".
+
+```{r}
+summary(ur.df(y, lags = 5, selectlags = "BIC", type = "drift"))
+```
+
+Testová štatistika (-13.958) je menšia ako kritická hodnota (-2.88), preto sa hypotéza o jednotkovom koreni zamieta. Dáta ďalej netreba diferencovať.
+
+Ideme hľadať sarima model:
+
+```{r}
+acf2(y)
+```
+
+Buď MA(2) alebo AR(1) (možno AR(3)?).
+
+```{r}
+ma2 <- sarima(y, 0,0,2)  # rezidua OK (prve na hrane), BIC = 2.80667 
+```
+
+```{r}
+ar1 <- sarima(y, 1,0,0)  # rezidua OK, BIC = 2.787634 
+```
+
+```{r}
+ar3 <- sarima(y, 3,0,0)  # rezidua OK, BIC = 2.813068 , nesignifikantny ar2 koeficient
+```
+
+AR(1) má najmenšie BIC. Overíme ešte stacionaritu.
+
+```{r}
+koef <- ar1$fit$coef
+koef_ar <- koef[grep("^ar",names(koef))]
+```
+
+Absolútne hodnoty koreňov polynómu potom sú
+```{r}
+abs(polyroot(c(1,-koef_ar)))
+```
+Je stacionárny (aj inverovateľný - lebo je to AR).
+
+Predikcie:
+```{r}
+sarima.for(y, 22, 1,0,0)
+lines(window(ts(faithful[, 1]), start=251), col="blue")
+```
+
+
+## Dáta _blood_ z knižnice `astsa`
+
+Popis dát z helpu: Multiple time series of measurements made for 91 days on the three variables, log(white blood count) [WBC], log(platelet) [PLT] and hematocrit [HCT]. Missing data code is NA. 
+
+```{r}
+y <- ts(blood[1:36, 3])
+plot(y)
+```
+
+V dátach nie je trend. Stredná hodnota niekde okolo 30 => type="drift"
+
+```{r}
+summary(ur.df(y, lags = 5, selectlags = "BIC", type = "drift"))
+```
+Testová štatistika (-3.2597) je menšia ako kritická hodnota (-2.93), preto sa hypotéza o jednotkovom koreni zamieta. Dáta ďalej netreba diferencovať.
+
+```{r}
+acf2(y)
+```
+
+AR(1) alebo MA(1).
+
+```{r}
+ar1 <- sarima(y,1,0,0) # BIC = 4.589554 
+```
+
+```{r}
+ma1 <- sarima(y,0,0,1)    # BIC = 4.562321 
+```
+
+MA(1) má menšie BIC.
+
+Overíme ešte invertovateľnosť.
+
+```{r}
+koef <- ma1$fit$coef
+koef_ma <- koef[grep("^ma",names(koef))]
+```
+
+Absolútne hodnoty koreňom polynómu potom sú
+```{r}
+abs(polyroot(c(1,koef_ma)))
+```
+Je inverovateľný (aj stacionárny - lebo je to MA).
+
+Predikcie:
+```{r}
+sarima.for(y, 5, 0,0,1)
+```
+
+
+## Dáta _gnp_ z knižnice `astsa`
+
+Popis dát z helpu: _Seasonally adjusted quarterly U.S. GNP from 1947(1) to 2002(3)._
+
+```{r}
+y <- log(gnp)
+plot(y)
+```
+
+Vidíme, že v dátach je trend, teda nie sú stacionárne. Preto dáta diferencujeme.
+
+```{r}
+plot(diff(y))
+abline(h=0, col="red")
+abline(h=mean(diff(y)), col="blue")
+```
+
+Keďže v pôvodných dátach bol trend, ADF test pre diferencie bude typu "drift" a v modeli pre diferencie bude konštantný člen.
+
+```{r}
+summary(ur.df(diff(y), lags = 5, selectlags = "BIC", type = "drift"))
+```
+
+Testová štatistika (-7.6443) je menšia ako kritická hodnota (-2.88), preto sa hypotéza o jednotkovom koreni zamieta. Dáta ďalej netreba diferencovať.
+
+```{r}
+acf2(diff(y))
+```
+
+Z PACF to vyzerá na AR(1), z ACF na MA(2). V modeli bude zahrnutá konštanta, keďže v pôvodných dátach bol rastúci trend.
+
+```{r}
+ar1 <- sarima(y,1,1,0) # rezidua tesne OK, BIC = -6.400957 
+```
+
+```{r}
+ma2 <- sarima(y,0,1,2) # rezidua OK, BIC = -6.388822 
+```
+
+
+AR(1) model má nižšie BIC.  
+
+Overíme ešte stacionaritu.
+
+```{r}
+koef <- ar1$fit$coef
+koef_ar <- koef[grep("^ar",names(koef))]
+```
+
+Absolútna hodnota koreňa polynómu je
+```{r}
+abs(polyroot(c(1,-koef_ar)))
+```
+Proces je stacionárny (aj inverovateľný - lebo je to AR).
+
+Predikcie:
+```{r}
+sarima.for(y, 10,1,1,0)
+```
+
+Zachováva sa rastúci trend.
