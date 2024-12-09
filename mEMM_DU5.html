@@ -374,7 +374,7 @@ toho).</p></li>
 <li><p>Dáta majú byť s pravidelnou sezónnosťou. Pravidelnú sezónnosť
 majú napríklad mesačné hodnoty teploty alebo prietoku riek, sezónne
 neočistené kvartálne hodnoty HDP, dáta Air-Passengers zo začiatku
-semestra a pod. - je to na grafe s priebehom jasne viditeľné</p></li>
+semestra a pod. - je to na grafe s priebehom jasne viditeľné.</p></li>
 <li><p>Nie z balíkov <code>astsa</code> a <code>datasets</code>, nie
 dáta použité na prednáške alebo na cvičení. Môžete použiť iné balíky,
 súčasťou ktorých sú dáta s časovými radmi, príklady k učebniciam, reálne
@@ -412,6 +412,27 @@ vynechali. (<em>2 body</em>)</p></li>
 navzájom (Považujete ich za dobré? Sú podobné alebo výrazne iné? Je
 niektorá výrazne lepšia?). (<em>1 bod</em>)</p></li>
 </ul>
+<p><strong>Bonus (1 bod):</strong></p>
+<p>Použite na výber SARIMA modelu funkciu <code>auto.arima</code> z
+balíka <code>forecast</code>pričom</p>
+<ul>
+<li>majú byť zahrnuté sezónne modely</li>
+<li>nemá sa použiť aproximácia pre rýchlosť výpočtu</li>
+<li>pri hľadaní modelu sa majú prejsť všetky možné modely s prípustným
+počtom parametrov</li>
+<li>uvažované kombinácie počtu AR a MA členov nechajte defaultné</li>
+<li>ako kritérium výberu modelu použite Bayesovo informačné
+kritérium</li>
+</ul>
+<p>Niečo o funkcii <code>auto.arima</code> bolo na prednáške: <a href="http://www.iam.fmph.uniba.sk/institute/stehlikova/cr23/prednasky/cr05_unitroot.pdf" class="uri">http://www.iam.fmph.uniba.sk/institute/stehlikova/cr23/prednasky/cr05_unitroot.pdf</a>
+(slidy 56-61), viac nájdete v dokumentácii:
+<code>?auto.arima</code>.</p>
+<p>Odhadnite získaný model pomocou funkcie <code>sarima</code> a
+zhodnoťte rezíduá. Našla funkcia <code>auto.arima</code> rovnaký model
+ako vy manuálne? Ak nie, porovnajte výsledky tohto automaticky vybraného
+modelu s vaším modelom. Zhodnoťte, či je automaticky vybraný model
+podobný (alebo lepší/horší) z hľadiska rezíduí, kvality predikcií a
+hodnoty BIC.</p>
 </div>
 
 
