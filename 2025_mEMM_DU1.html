@@ -381,15 +381,16 @@ stačí jedna veta, prípadne niekoľko viet).</li>
 všetky autokorelácie nesignifikantné? Ktoré sú signifikantné?).</li>
 <li>Pomocou príkazu <code>acf(y, plot = FALSE, lag.max = 10)</code> - (y
 sú vaše dáta) - dostanete prvých 10 hodnôt autokorelačnej funkcie.
-Pomocou týchto <strong>zaokrúhlených hodnôt</strong> testujte hypotézu,
-že prvé 3 autokorelácie sú nulové. Vypočítajte pomocou R-ka (bez
-použitia funkcie <code>Box.test</code>) hodnotu testovej štatistiky,
-kritickú hodnotu tohto testu na 5-percentnej hladine významnosti a
-p-hodnotu. Uveďte, či danú hypotézu zamietate alebo nezamietate a prečo.
-(Hodiť sa vám pri tom môže toto <a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Chisquare" class="uri">https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Chisquare</a>)</li>
-<li>Výsledky Ljung-Boxovho testu pre hodnoty lagu od 1 až po zvolenú
-hornú hranicu. P-hodnoty znázornite graficky ako na cvičení, spolu s
-porovnaním s hodnotou 0.05. Interpretujte výsledky.</li>
+Pomocou týchto hodnôt testujte hypotézu, že prvé 3 autokorelácie sú
+nulové. Vypočítajte pomocou R-ka (bez použitia funkcie
+<code>Box.test</code>) hodnotu testovej štatistiky, kritickú hodnotu
+tohto testu na 5-percentnej hladine významnosti a p-hodnotu. Uveďte, či
+danú hypotézu zamietate alebo nezamietate a prečo. (Hodiť sa vám pri tom
+môže toto <a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Chisquare" class="uri">https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Chisquare</a>)</li>
+<li>Výsledky Ljung-Boxovho testu pre hodnoty lagu od 1 až po Vami
+zvolenú hornú hranicu (odporúčam aspoň 8 lagov). P-hodnoty znázornite
+graficky ako na cvičení, spolu s porovnaním s hodnotou 0.05.
+Interpretujte výsledky.</li>
 <li>Zhodnotenie modelu: Považujete model “výnosy sú konštanta (t. j.
 priemerný výnos) plus biely šum” za dobrý model pre vaše dáta?
 Prečo?</li>
