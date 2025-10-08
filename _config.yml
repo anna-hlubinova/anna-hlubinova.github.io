@@ -370,8 +370,8 @@ sidebars:
   domace_ulohy_memm:
     - title: Domáce úlohy mEMM
       children:
-        #- title: "DÚ 1"
-        #  url: /mEMM_DU1.html
+        - title: "DÚ 1"
+          url: /2025_mEMM_DU1.html
         #- title: "DÚ 2"
         #  url: /mEMM_DU2.html
         #- title: "DÚ 3"
