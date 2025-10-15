@@ -391,8 +391,8 @@ sidebars:
           url: /mPMS_Cv1/
         - title: "Cvičenie 2"
           url: /2025_mPMS_Cv2.html
-        #- title: "Cvičenie 3"
-        #  url: /mPMS_Cv3/
+        - title: "Cvičenie 3"
+          url: /2025_mPMS_Cv3/
         #- title: "Cvičenie 4"
         #  url: /mPMS_Cv4.html
         #- title: "Cvičenie 5"
