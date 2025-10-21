@@ -356,8 +356,8 @@ sidebars:
       children:
         - title: "Cvičenie 1"
           url: /mEMM_Cv1.html
-        #- title: "Cvičenie 2"
-        #  url: /mEMM_Cv2.html
+        - title: "Cvičenie 2"
+          url: /2025_mEMM_Cv2.html
         #- title: "Cvičenie 3"
         #  url: /mEMM_Cv3/
         #- title: "Cvičenie 4"
@@ -372,8 +372,8 @@ sidebars:
       children:
         - title: "DÚ 1"
           url: /2025_mEMM_DU1.html
-        #- title: "DÚ 2"
-        #  url: /mEMM_DU2.html
+        - title: "DÚ 2"
+          url: /2025_mEMM_DU2.html
         #- title: "DÚ 3"
         #  url: /mEMM_DU3.html
         #- title: "DÚ 4"
@@ -393,8 +393,8 @@ sidebars:
           url: /2025_mPMS_Cv2.html
         - title: "Cvičenie 3"
           url: /2025_mPMS_Cv3/
-        #- title: "Cvičenie 4"
-        #  url: /mPMS_Cv4.html
+        - title: "Cvičenie 4"
+          url: /2025_mPMS_Cv4.html
         #- title: "Cvičenie 5"
         #  url: /mPMS_Cv5.html
         #- title: "Cvičenie 6"
