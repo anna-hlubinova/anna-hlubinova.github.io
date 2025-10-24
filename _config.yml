@@ -355,7 +355,7 @@ sidebars:
     - title: "Cvičenia mEMM"
       children:
         - title: "Cvičenie 1"
-          url: /mEMM_Cv1.html
+          url: /2025_mEMM_Cv1.html
         - title: "Cvičenie 2"
           url: /2025_mEMM_Cv2.html
         #- title: "Cvičenie 3"
