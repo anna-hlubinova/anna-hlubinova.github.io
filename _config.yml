@@ -358,8 +358,8 @@ sidebars:
           url: /2025_mEMM_Cv1.html
         - title: "Cvičenie 2"
           url: /2025_mEMM_Cv2.html
-        #- title: "Cvičenie 3"
-        #  url: /mEMM_Cv3/
+        - title: "Cvičenie 3"
+          url: /mEMM_Cv3/
         #- title: "Cvičenie 4"
         #  url: /mEMM_Cv4.html
         #- title: "Cvičenie 5"
@@ -397,8 +397,8 @@ sidebars:
           url: /2025_mPMS_Cv4.html
         - title: "Cvičenie 5"
           url: /2025_mPMS_Cv5.html
-        #- title: "Cvičenie 6"
-        #  url: /mPMS_Cv6/
+        - title: "Cvičenie 6"
+          url: /mPMS_Cv6/
         #- title: "Cvičenie 7"
         #  url: /mPMS_Cv7.html
         #- title: "Cvičenie 8"
