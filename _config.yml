@@ -374,8 +374,8 @@ sidebars:
           url: /2025_mEMM_DU1.html
         - title: "DÚ 2"
           url: /2025_mEMM_DU2.html
-        #- title: "DÚ 3"
-        #  url: /mEMM_DU3.html
+        - title: "DÚ 3"
+          url: /2025_mEMM_DU3.html
         #- title: "DÚ 4"
         #  url: /mEMM_DU4.html
         #- title: "DÚ 5"
