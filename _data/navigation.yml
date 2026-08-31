@@ -2,11 +2,11 @@
 # main links
 main:
   - title: "Cvičenia mEMM" 
-    url: /2025_mEMM/
+    url: /2026_mEMM/
   - title: "Domáce úlohy mEMM"
-    url: /2025_mEMM_DU/
-  - title: "Cvičenia mPMS"
-    url: /2025_mPMS/
+    url: /2026_mEMM_DU/
+  #- title: "Cvičenia mPMS"
+  #  url: /2025_mPMS/
 
 
 
