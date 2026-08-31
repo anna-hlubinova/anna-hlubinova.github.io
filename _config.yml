@@ -22,11 +22,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Časové rady 2025"
+title                    : "Časové rady 2026"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Anna Hlubinová"
-description              : "Cvičenia k predmetom Časové rady pre mEMM a mPMS, 2025."
+description              : "Cvičenia k predmetu Časové rady pre mEMM."
 url                      : "https://anna-hlubinova.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -121,11 +121,11 @@ author:
   name             : "Anna Hlubinová"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD. student"
-  location         : "KAMŠ FMFI UK, M 232"
+  location         : "KAMŠ FMFI UK, M-232"
 
 
 
-  email            : "hlubinova9@uniba.sk"
+  email            : "anna.hlubinova@fmph.uniba.sk"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -354,56 +354,56 @@ sidebars:
   cvicenia_memm:
     - title: "Cvičenia mEMM"
       children:
-        - title: "Cvičenie 1"
-          url: /2025_mEMM_Cv1.html
-        - title: "Cvičenie 2"
-          url: /2025_mEMM_Cv2.html
-        - title: "Cvičenie 3"
-          url: /mEMM_Cv3/
-        - title: "Cvičenie 4"
-          url: /2025_mEMM_Cv4.html
-        - title: "Cvičenie 5"
-          url: /2025_mEMM_Cv5.html
-        - title: "Cvičenie 6"
-          url: /2025_mEMM_Cv6.html
+        #- title: "Cvičenie 1"
+        #  url: /2025_mEMM_Cv1.html
+        #- title: "Cvičenie 2"
+        #  url: /2025_mEMM_Cv2.html
+        #- title: "Cvičenie 3"
+        #  url: /mEMM_Cv3/
+        #- title: "Cvičenie 4"
+        #  url: /2025_mEMM_Cv4.html
+        #- title: "Cvičenie 5"
+        #  url: /2025_mEMM_Cv5.html
+        #- title: "Cvičenie 6"
+        #  url: /2025_mEMM_Cv6.html
 
   domace_ulohy_memm:
     - title: Domáce úlohy mEMM
       children:
-        - title: "DÚ 1"
-          url: /2025_mEMM_DU1.html
-        - title: "DÚ 2"
-          url: /2025_mEMM_DU2.html
-        - title: "DÚ 3"
-          url: /2025_mEMM_DU3.html
-        - title: "DÚ 4"
-          url: /2025_mEMM_DU4.html
-        - title: "DÚ 5"
-          url: /2025_mEMM_DU5.html
+        #- title: "DÚ 1"
+        #  url: /2025_mEMM_DU1.html
+        #- title: "DÚ 2"
+        #  url: /2025_mEMM_DU2.html
+        #- title: "DÚ 3"
+        #  url: /2025_mEMM_DU3.html
+        #- title: "DÚ 4"
+        #  url: /2025_mEMM_DU4.html
+        #- title: "DÚ 5"
+        #  url: /2025_mEMM_DU5.html
 
        # - title: "DÚ 2"
        #   url: /mEMM_DU2/
 
-  cvicenia_mpms:
-    - title: Cvičenia mPMS
-      children:
-        - title: "Cvičenie 1"
-          url: /mPMS_Cv1/
-        - title: "Cvičenie 2"
-          url: /2025_mPMS_Cv2.html
-        - title: "Cvičenie 3"
-          url: /2025_mPMS_Cv3/
-        - title: "Cvičenie 4"
-          url: /2025_mPMS_Cv4.html
-        - title: "Cvičenie 5"
-          url: /2025_mPMS_Cv5.html
-        - title: "Cvičenie 6"
-          url: /mPMS_Cv6/
-        - title: "Cvičenie 7"
-          url: /2025_mPMS_Cv7.html
-        - title: "Cvičenie 8"
-          url: /2025_mPMS_Cv8.html
-        - title: "Cvičenie 9"
-          url: /2025_mPMS_Cv9.html
-        - title: "Cvičenie 10"
-          url: /2025_mPMS_Cv10.html
+  #cvicenia_mpms:
+  #  - title: Cvičenia mPMS
+  #    children:
+  #      - title: "Cvičenie 1"
+  #        url: /mPMS_Cv1/
+  #      - title: "Cvičenie 2"
+  #        url: /2025_mPMS_Cv2.html
+  #      - title: "Cvičenie 3"
+  #        url: /2025_mPMS_Cv3/
+  #      - title: "Cvičenie 4"
+  #        url: /2025_mPMS_Cv4.html
+  #      - title: "Cvičenie 5"
+  #        url: /2025_mPMS_Cv5.html
+  #      - title: "Cvičenie 6"
+  #        url: /mPMS_Cv6/
+  #      - title: "Cvičenie 7"
+  #        url: /2025_mPMS_Cv7.html
+  #      - title: "Cvičenie 8"
+  #        url: /2025_mPMS_Cv8.html
+  #      - title: "Cvičenie 9"
+  #        url: /2025_mPMS_Cv9.html
+  #      - title: "Cvičenie 10"
+  #        url: /2025_mPMS_Cv10.html
