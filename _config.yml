@@ -354,8 +354,8 @@ sidebars:
   cvicenia_memm:
     - title: "Cvičenia mEMM"
       children:
-        #- title: "Cvičenie 1"
-        #  url: /2025_mEMM_Cv1.html
+        - title: "Cvičenie 1"
+          url: /2026_mEMM_Cv1.html
         #- title: "Cvičenie 2"
         #  url: /2025_mEMM_Cv2.html
         #- title: "Cvičenie 3"
