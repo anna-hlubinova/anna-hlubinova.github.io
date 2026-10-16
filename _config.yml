@@ -372,8 +372,8 @@ sidebars:
       children:
         - title: "DÚ 1"
           url: /2026_mEMM_DU1.html
-        #- title: "DÚ 2"
-        #  url: /2025_mEMM_DU2.html
+        - title: "DÚ 2"
+          url: /2026_mEMM_DU2.html
         #- title: "DÚ 3"
         #  url: /2025_mEMM_DU3.html
         #- title: "DÚ 4"
